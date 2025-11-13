@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center mb-4 fw-light">Get in Touch with Our Team</h1>
+                <p class="text-center text-muted mb-5">We are here to answer any questions you may have about sales, service, or financing.</p>
+
+                <div class="contact-card bg-white p-4 p-md-5">
+                    <div class="row">
+                        <!-- Contact Form Column -->
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <h2 class="h4 mb-4 text-primary">Send Us a Message</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control rounded-3" id="name" placeholder="Ethan Cole" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control rounded-3" id="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select rounded-3" id="subject" required>
+                                        <option value="" disabled selected>Select an Inquiry Type</option>
+                                        <option value="sales">New/Used Vehicle Sales</option>
+                                        <option value="service">Service & Repair</option>
+                                        <option value="finance">Financing Questions</option>
+                                        <option value="general">General Inquiry</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control rounded-3" id="message" rows="4" placeholder="How can we help you today?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 rounded-3 shadow-sm">Submit Inquiry</button>
+                            </form>
+                        </div>
+
+                        <!-- Contact Details Column -->
+                        <div class="col-lg-5 ps-lg-5">
+                            <h2 class="h4 mb-4 text-success">Contact Details</h2>
+
+                            <div class="list-group list-group-flush mb-4">
+                                <div class="list-group-item border-0 px-0">
+                                    <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                    <strong class="text-dark">Address:</strong><br>
+                                    123 Dealership Drive, Suite 100<br>
+                                    Automobile City, CA 90210
+                                </div>
+                                <div class="list-group-item border-0 px-0">
+                                    <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                    <strong class="text-dark">Phone:</strong><br>
+                                    (555) 123-4567 (Sales)<br>
+                                    (555) 123-4568 (Service)
+                                </div>
+                                <div class="list-group-item border-0 px-0">
+                                    <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                    <strong class="text-dark">Email:</strong><br>
+                                    <a href="mailto:sales@dealerships.com" class="text-decoration-none">sales@autoprime.com</a>
+                                </div>
+                                <div class="list-group-item border-0 px-0">
+                                    <i class="bi bi-clock-fill text-primary me-2"></i>
+                                    <strong class="text-dark">Hours:</strong><br>
+                                    Mon - Sat: 9:00 AM - 7:00 PM<br>
+                                    Sunday: Closed
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
