@@ -1,7 +1,10 @@
 # Uncomment the imports before you add the code
 from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.generic import TemplateView
 from . import views
 from .restapis import get_request, analyze_review_sentiments, post_review
 
@@ -16,4 +19,5 @@ urlpatterns = [
     path(route='dealer/<int:dealer_id>', view=views.get_dealer_details, name='dealer_details'),
     path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews, name='dealer_details'),
     path(route='add_review', view=views.add_review, name='add_review'),
+    path('postreview/<int:dealer_id>',TemplateView.as_view(template_name="index.html")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
